@@ -3,11 +3,14 @@
 // the WPILib BSD license file in the root directory of this project.
 
 package frc.robot;
-import
 
 public final class Constants {
-  public static class OperatorConstants {
+  public static class wheelIDs_and_controller {
     public static final int kDriverControllerPort = 0;
-    public static final 
+    public static final int LeftFrontID = 0;
+    public static final int RightFrontID = 1;
+    public static final int LeftBackID = 2;
+    public static final int RightBackID = 3;
+
   }
 }
