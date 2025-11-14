@@ -36,7 +36,7 @@ public class RobotContainer {
   public Command getAutonomousCommand() {
     return new SequentialCommandGroup(
       new RunCommand(()-> driveTrain.Arcade_Drive(0.7, 0), driveTrain).withTimeout(10),
-      new InstantCommand(()-> driveTrain.Arcade_Drive(0, 0.5), driveTrain)
+      new RunCommand(()-> driveTrain.Arcade_Drive(0, 0.5), driveTrain).withTimeout(2)
     );
   }
     
